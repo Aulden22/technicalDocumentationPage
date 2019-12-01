@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>technicalDocumentationPage</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Guide to HTML - Technical Documentation Page
+    </title>
+</head>
+
+
+<body>
+<nav id="navbar">
+    <header id="nav-header">HTML Quick Guide</header>
+    <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Basics">Basics</a></li>
+        <li><a class="nav-link" href="#Elements">Elements</a></li>
+        <li><a class="nav-link" href="#Attributes">Attributes</a></li>
+        <li><a class="nav-link" href="#Formatting">Formatting</a></li>
+        <li><a class="nav-link" href="#Classes">Classes</a></li>
+        <li><a class="nav-link" href="#IDs">IDs</a></li>
+        <li><a class="nav-link" href="#Summary">Summary</a></li>
+    </ul>
+</nav>
+
+<main id="main-doc">
+    <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>
+            HTML, or Hypertext Markup Language, is the cornerstone of the whole world wide web. 
+            This markup language has been the backbone (ribs, arms, and legs) of webpages for decades. 
+            From your personal GeoCities page back in high school to your Myspace account in high school, HTML has been serving 
+            the internet to you in an easily read format for a while. You may still remember a lot of the language from personalizing 
+            your Myspace with glittery GIFs and tight tiled backgrounds.
+        </p>
+        <p>
+            A webpage is more than just HTML, of course. Modern day websites employ CSS and Javascript often, but, still, 
+            it all starts with the HTML. You make the general cite with HTML and then you build out its style with CSS, 
+            just like a skin, and its capabilities with Javascript - kind of like its muscles.
+        </p>
+        <p>
+            All of this code is stored on a server, and, as you know, you must use a web browser to connect to the website 
+            stored on the server. Your browser parses the code, then it constructs the site.
+        </p>
+        <p>
+            Websites have a <em>lot</em> of moving parts, and rely on many types of code. This particular site - though using 
+            HTML and CSS - will focus primarily on HTML.
+        </p>
+    </section>
+    <section class="main-section" id="Basics">
+        <header>Basics</header>
+        <p>
+            There are several elements a website's code should always have. Think of it like the formatting for a research 
+            paper or an essay. Each paper, or website, should have headings formatted with specific standards.
+        </p>
+        <p>
+            In a high school or college class your papers will always have a heading in the upper, left-hand corner 
+            of your first page just like this:
+        </p>
+        <code>
+            Jack Doe<br>
+            Prof. Jane Doe<br>
+            Intro to HTML<br>
+            1 January, 2001
+        </code>
+        <p>
+            Your HTML code will have a heading as well. It does not contain detailed documentation as this part is not 
+            for people to read, but is, instead, intended for the browser. This heading will look like this:
+        </p>
+        <code>
+            &lt;!DOCTYPE html&gt;
+        </code>
+        <p>
+            This is not all your code will need, though. You also have to nest all the code into the <code>&lt;html&gt;</code> element.
+            HTML elements will nearly always have a corresponding element closing it off, just like this:
+        </p>
+        <re>
+        <code>
+            &lt;html&gt;<br>
+            YOUR CODE HERE<br>
+            &lt;/html&gt;
+        </code>
+        </re>
+    </section>
+    <section class="main-section" id="Elements">
+        <header>Elements</header>
+        <p>
+            Now there has been many references to <b>elements</b>, but what is an element?
+        </p>
+        <p>
+            The <b>HTML Element</b> page on Wikipedia defines it like this:
+            <p class="tab">
+                "An <b>HTML Element</b> is an individual component of and HTML document or webpage."
+            </p>
+            That sounds a little vague, so here are a few examples:
+        </p>
+        <ul>
+            <li><code>&lt;body&gt; = The body element defines the body of the webpage. Everything you have been reading is in the body</code></li>
+            <li><code>&lt;h1&gt; = First heading</code></li>
+            <li><code>&lt;p&gt; = Paragraph</code></li>
+        </ul>
+        <p>
+            These are the most common elements used on webpages, especially by beginners. This is not a comprehensive list.
+            Many more elements exist, and many have varied forms. The <code>h1</code> tag, for instance, has slight 
+            variations like:
+            <ul>
+                <li><code>&lt;h2&gt;</code></li>
+                <li><code>&lt;h3&gt;</code></li>
+                <li><code>&lt;h4&gt;</code></li>
+            </ul>
+            Notice the declination in numbers by the heading tag. The heading tags transform the text nested inside.
+            Text is made bold and the font-size is made large. Now as you decrease the heading number, so will the 
+            font-size decrease. Treat it like a sub-heading in an essay.
+        </p>
+        <p>
+            Remember, many elements have items nested in them. That means an end tag should follow the contents of the 
+            element. The <code>&lt;h1&gt;</code> element should be followed up by the 
+            <code>&lt;/h1&gt;</code>  , and the <code>&lt;p&gt;</code> element should be followed by <code>&lt;/p&gt;</code>  .
+        </p>
+    </section>
+    <section class="main-section" id="Attributes">
+        <header>Attributes</header>
+        <p>
+           As mentioned before, when using elements such as <code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code> you
+           nest your paragraph inside. That is simple, but more can be done with the element by using <b>attributes</b>.
+        </p>
+        <p>
+            An attribute is directly associated with the element. Instead of inserting the attribute between the two tags
+            of the element like this:
+        </p>
+        <code>
+            &lt;p&gt; <b>attribute</b> &lt;/p&gt;
+        </code>
+        <p>
+            you should, instead, insert the attribute <em>inside</em> the first tag itself. Like this:
+        </p>
+        <code>
+            &lt;p <b>attribute</b>&gt; content &lt;/p&gt;
+        </code>
+        <p>
+            The end tag will not contain anything pertaining to the attribute.
+        </p>
+        <p>
+            This far part of the syntaxic relationship between attributes and elements has been explained, but
+            what <em>is</em> an attribute? <a href="https://www.w3schools.com/html/html_attributes.asp" title="w3schools.com">W3schools.com</a>
+            says, "Attributes provide additional information about HTML elements." Simply that means it is a tool that
+            allows elements to have extra skills. Notice the citation for w3schools in this paragraph. It is shown as 
+            a link, and that link was made with an attribute. The attribute <code>href=""</code> can be used with the 
+            element <code>&lt;a&gt;</code>, also referred to as an anchor, to create a link. A website's URL is added
+            between the quotation marks of the <code>href=""</code> attribute to point to the location the link will 
+            take the end-user. It will look like this:
+        </p>
+        <code>
+            &lt;a href="https://www.w3schools.com/html/html_attributes.asp"&gt;
+        </code>
+        <p>
+            Now if the end-user simply hovers their cursor over the link without clicking on it, the name 
+            <b>w3schools.com</b> appears in a box alongside the cursor. This is created by using the attribute 
+            <code>title=""</code> where text is written inside the quotation marks of the attribute. The entire
+            element of the link looks like this:
+        </p>
+        <code>
+            &lt;a href="https://www.w3schools.com/html/html_attributes.asp" title="w3schools.com"&gt;W3schools.com&lt;/a&gt;
+        </code>
+        <p>
+            The actual text of the link being clicked on is nested between the anchor elements.
+        </p>
+        <p>
+            Attributes always effect the contents of the element it is attributed. Here is an attribute that will 
+            apply stylistic changes to the element. This attribute is aptly named <code>style=""</code>  . Think 
+            of this as a text-based version of the font bar on a wordprocessing program. Text-based may sound 
+            intimidating at first, but it is really rather simple. No, there is no visual representation to the 
+            functions available, and, yes, that means all the functions are memorized. It is actually more simple 
+            than one may think. There is more freedom here than scouring through menu after menu to find the tool 
+            needed. It has been said, in reference to commandlines and text-based programming, that it is the 
+            <em>fastest</em> way to preform a task than any other way.
+        </p>
+        <p>
+            The <code>style=""</code> attribute will let you change font color, font size, and background color, just 
+            to name a few. Take a look at a few examples.
+        </p>
+        <code>
+            &lt;p style="font-size:36px"&gt;The quick brown fox&lt;/p&gt;
+        </code>
+        <p class="example" style="font-size:36px;">
+            The quick brown fox
+        </p>
+        <p>
+            Building off this:
+        </p>
+        <code>
+            &lt;p style="color: red; font-size:36px;"&gt;The quick brown fox&lt;/p&gt;
+        </code>
+        <p class="example" style="color: red; font-size: 36px;">
+            The quick brown fox
+        </p>
+        <p>
+            Once again, these are just a few examples of different type of attributes. There are too many examples 
+            to show here. The <b>w3schools</b> website is an excellent resources for all kinds of attributes available 
+            in HTML.
+        </p>
+    </section>
+    <section class="main-section" id="Formatting">
+        <header>Formatting</header>
+        <p>
+            Building off of the style attribute from the last section, there are other ways to add stylistic elements 
+            to HTML text on a webpage. It <em>is</em> an element, truly. <b>Formatting</b> is a small way to give text 
+            unique qualities, compared to the other text surrounding it, by using in-text elements. Notice the word "formatting" in the 
+            preceding sentence. The word has been made bold. Returning to the previous example of the word processing 
+            program, a button can be selected to transform text into and emboldened state. This same function can 
+            be done in HTML with the <code>&lt;b&gt;</code> element. The same was done with the word "is" in the sentence 
+            preceding that by using <code>&lt;em&gt;</code>  .
+        </p>
+        <p>
+            Why is this called formatting? It is not like the formatting of a college essay, so, again, why is this 
+            called formatting? <b>W3schools</b> says, "HTML uses elements like <code>&lt;b&gt;</code> and 
+            <code>&lt;i&gt;</code> for formatting output, <b>bold</b> or <i>italic</i> text." A lot of the elements 
+            covered here are on the "micro" side of things, <b>style</b> and <b>formatting</b> primarily format text, 
+            not the large scale, or "macro", layout of a page.
+        </p>
+    </section>
+    <section class="main-section" id="Classes">
+        <header>Classes</header>
+        <p>
+            To make changes on the large scale side of the HTML, the <code>&lt;class=""&gt;</code> attribute can be used 
+            to edit or transform the multiple elements it is associated. Notice how the heading and paragraph of each 
+            section on this webpage are uniform in style. All the headings and paragraphs have the same font-family, 
+            font-size, and indentation. The header and paragraph are nested inside a <code>&lt;section&gt;</code> element 
+            with the attribute <code>&lt;class=""&gt;</code>  , which in practice looks like this:
+        </p>
+        <code class="example">
+            &lt;section class="main-section"&gt;<br>
+                &lt;p&gt; TEXT &lt;/p&gt;<br>
+            &lt;/section&gt;
+        </code>
+        <p>
+            There is another language commonly used on websites called CSS. The style attribute employees some CSS to 
+            change the appearance of HTML. Class attributes are typically used in conjunction with CSS to modify any 
+            elements associated with a specific class. Using the CSS style sheet alongside the class attribute multiple 
+            attributes can be added to an element with much less clutter. The CSS on this page looks similar to this:
+        </p>
+        <code class="example">
+            &lt;style&gt;<br>
+            .main-section{<br>
+            font-family: courier;<br>
+            font-size: 16px;<br>
+            }<br>
+            &lt;/style&gt;
+        </code>
+         <p>
+            The CSS command that references the associated class it is modifying is a period with no space 
+            preceding the name of the class. When <code>&lt;section class="trombone"&gt;</code> is modified 
+            using CSS, it is referenced with <code>.trombone{}</code>
+        </p>
+    </section>
+    <section class="main-section" id="IDs">
+        <header>IDs</header>
+        <p>
+            A class attribute is used with CSS to stylize multiple elements, but the <b>ID</b> attribute is 
+            used to make large scale changes the contents of a single element. ID attributes are added to 
+            elements the same way as class attributes.
+        </p>
+        <code class="example">
+            &lt;section id="example"&gt;
+        </code>
+        <p>
+            Within the style sheet, though, it is referenced with pound sign, or hashtag, like this:
+        </p>
+        <code class="example">
+            &lt;style&gt;<br>
+            #example {<br>
+            }<br>
+            &lt;/style&gt;
+        </code>
+        <p>
+            ID attributes can also be used with the class attribute. 
+        </p>
+        <code class="example">
+            &lt;section class="main-section" id="example"&gt;
+        </code>
+        <p>
+            This page uses the ID attribute alongside the class attribute, but not for further stylistic 
+            changes. The menu, with links to each section of this document, is linked to each sections ID 
+            attribute. This is what allows the link to jump to the section selected.
+        </p>
+        <p>
+            Each item in the list of options has an <code>href=""</code> attribute associated with it that 
+            references its contents, being the ID of each section, then scrolls the page location down to 
+            the section selected.
+        </p>
+    </section>
+    <section class="main-section" id="Summary">
+        <header>Summary</header>
+        <p>
+            This is not a comprehensive document of HTML, but it is a quick overview of the HTML language. 
+            For complete documentation on HTML and CSS visit, <a href="https://www.w3schools.com/">w3schools.com</a>.
+        </p>
+        <p>
+            Information provided by<br>
+            <ul>
+                <li>w3schools.com, HTML Tutorial,  <a href="https://www.w3schools.com/html/default.asp">https://www.w3schools.com/html/default.asp</a></li>
+                <li>wikipedia.org,  HTML Element,  <a href="https://en.wikipedia.org/wiki/HTML_element">https://en.wikipedia.org/wiki/HTML_element</a></li>
+            </ul>
+        </p>
+    </section>
+</main>
+</body>
+</html>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
